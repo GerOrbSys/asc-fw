@@ -1,0 +1,6 @@
+config BR2_PACKAGE_DEBAYER
+	default y
+	bool "debayer"
+	depends on BR2_PACKAGE_LIBPNG
+	help
+		Simple stupid de-bayering application that outputs pngs

@@ -1,0 +1,6 @@
+config BR2_PACKAGE_CAPTURE
+	default y
+	bool "capture"
+	depends on BR2_PACKAGE_ASC_PACKAGES
+	help
+		Capture application to control the camera

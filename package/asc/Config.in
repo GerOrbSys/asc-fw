@@ -5,4 +5,4 @@ config BR2_PACKAGE_ASC_PACKAGES
     Tools, utilities and services for asc operation
 
 source "$BR2_EXTERNAL/package/asc/capture/Config.in"
-source "$BR2_EXTERNAL/package/asc/simple_debayer/Config.in"
+source "$BR2_EXTERNAL/package/asc/debayer/Config.in"

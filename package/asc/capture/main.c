@@ -37,11 +37,6 @@ struct buffer {
 struct buffer *         buffers         = NULL;
 static unsigned int     n_buffers       = 0;
 
-
-void set_format(uint32 width, uint32 height) {
-
-}
-
 static int xioctl(int fd, int request, void* argp)
 {
 	int r;
@@ -76,8 +71,8 @@ int main(int argc, char **argv) {
 
 	struct v4l2_format fmt;
 
-	int width  = 3856;
-	int height = 2048;
+	int width  = 3664;
+	int height = 2748;
 
 	struct v4l2_format fmt;
 	CLEAR(fmt);

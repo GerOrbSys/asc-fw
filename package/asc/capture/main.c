@@ -69,7 +69,6 @@ int main(int argc, char **argv) {
 		return 0;
 	}
 
-	struct v4l2_format fmt;
 
 	int width  = 3664;
 	int height = 2748;

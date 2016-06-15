@@ -163,6 +163,8 @@ int main(int argc, char **argv) {
     	return -1;
     }
 
+	printf("Start streaming\n");
+
 	// Read frame
 	struct v4l2_buffer buf;
 

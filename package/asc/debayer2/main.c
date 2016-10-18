@@ -22,10 +22,7 @@ int main(int argc, char ** argv) {
         printf("Not enough arguments \n");
         return 1;
     }
-//argv[0] ist der Aufruf
-//argv[1] ist input file
-//arfv[2] ist output file
-//argv
+
     size_t width = (size_t)atoi(argv[1]);
     size_t height = (size_t)atoi(argv[2]);
 
@@ -35,20 +32,10 @@ int main(int argc, char ** argv) {
     FILE *in = fopen(in_file, "rb");
     FILE *out = fopen(out_file, "wb");
 
-	if(in == NULL){
-	printf("Could not open input file");
-	return 1;
-	}
-
-	if(out == NULL){
-	printf("Could not open output file");
-	return 1;
-	}
-
-//    if(in == NULL || out == NULL) {
-//        printf("Could not open files");
- //       return 1;
- //   }
+    if(in == NULL || out == NULL) {
+        printf("Could not open files");
+        return 1;
+    }
 
     unsigned short *line_in = (unsigned short*)malloc(width * 4);
     pixel_t *line_out = (pixel_t*)malloc(sizeof(pixel_t) * width * 2); // two lines
@@ -104,9 +91,9 @@ int main(int argc, char ** argv) {
 
             pixel_t p;
 
-            p.r = red;// / (1 << 4);
-            p.g = green_1*9/10;// / (1 << 4);
-            p.b = blue;// / (1 << 4);
+            p.r = red / (1 << 4);
+            p.g = green_1 / (1 << 4);
+            p.b = blue / (1 << 4);
 
             line_out[j]         = p;
             line_out[j+1]       = p;

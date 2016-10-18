@@ -1,0 +1,6 @@
+config BR2_PACKAGE_SPI
+	default y
+	bool "spi"
+	depends on BR2_PACKAGE_ASC_PACKAGES
+	help
+		Application for interacting with on board computer via SPI

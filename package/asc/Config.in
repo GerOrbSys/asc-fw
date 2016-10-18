@@ -6,3 +6,4 @@ config BR2_PACKAGE_ASC_PACKAGES
 
 source "$BR2_EXTERNAL/package/asc/capture/Config.in"
 source "$BR2_EXTERNAL/package/asc/debayer/Config.in"
+source "$BR2_EXTERNAL/package/asc/spi/Config.in"
